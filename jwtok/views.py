@@ -11,5 +11,6 @@ class Home(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        content = {'message': 'Hello, World!'}
+        content = {
+            'message': 'Hello, World! sachin this side, yes youa re authenticated now.'}
         return Response(content)
